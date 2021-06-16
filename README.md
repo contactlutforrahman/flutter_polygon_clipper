@@ -7,18 +7,18 @@ Add this to your project's pubspec.yaml file:
 
 ```yaml
 dependencies:
-  flutter_polygon: ^0.2.0
+  flutter_polygon_clipper: ^1.0.0
 ```
 
 ## Usage
 
 ### Clipping
 
-Use the `ClipPolygon` widget to clip a child widget.
+Use the `FlutterClipPolygon` widget to clip a child widget.
 ``` dart
 import 'package:flutter_polygon_clipper/flutter_polygon_clipper.dart';
 
-ClipPolygon(
+FlutterClipPolygon(
  sides: 6,
  borderRadius: 5.0,     // Defaults to 0.0 degrees
  rotate: 90.0,          // Defaults to 0.0 degrees
@@ -32,12 +32,12 @@ ClipPolygon(
 
 ### Borders
 
-Use the `PolygonBorder` shape with your favorites widgets!
+Use the `FlutterClipPolygon` shape with your favorites widgets!
 ``` dart
 import 'package:flutter_polygon_clipper/flutter_polygon_clipper.dart';
 
 ElevatedButton(
-  shape: PolygonBorder(
+  shape: FlutterClipPolygon(
     sides: 6,
     borderRadius: 5.0,                                      // Defaults to 0.0 degrees
     rotate: 30.0,                                           // Defaults to 0.0 degrees

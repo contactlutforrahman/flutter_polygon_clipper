@@ -5,7 +5,7 @@ import 'package:flutter_polygon_clipper/src/polygon_path_drawer.dart';
 ///
 /// To round the edges of the polygon, pass the desired angle to [borderRadius].
 /// There is a known issue where adding a [borderRadius] will reduce the size of the polygon.
-class ClipPolygon extends StatelessWidget {
+class FlutterClipPolygon extends StatelessWidget {
   final Widget? child;
   final int? sides;
   final double? rotate;
@@ -17,7 +17,7 @@ class ClipPolygon extends StatelessWidget {
   /// Provide a [borderRadius] to set the radius of the corners.
   ///
   /// The [sides] argument must be at least 3.
-  ClipPolygon(
+  FlutterClipPolygon(
       {Key? key,
         required this.sides,
         this.rotate: 0.0,

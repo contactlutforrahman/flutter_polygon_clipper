@@ -14,7 +14,7 @@ import 'package:flutter_polygon_clipper/src/polygon_path_drawer.dart';
 /// See also:
 ///
 ///  * [BorderSide], which is used to describe the border of the polygon.
-class PolygonBorder extends OutlinedBorder {
+class FlutterPolygonBorder extends OutlinedBorder {
   final int sides;
   final double rotate;
   final double borderRadius;
@@ -30,7 +30,7 @@ class PolygonBorder extends OutlinedBorder {
   /// [sides] should be at least 3.
   ///
   /// All variables must not be null.
-  const PolygonBorder({
+  const FlutterPolygonBorder({
     required this.sides,
     this.rotate = 0.0,
     this.borderRadius = 0.0,
@@ -55,8 +55,8 @@ class PolygonBorder extends OutlinedBorder {
 
   @override
   ShapeBorder? lerpFrom(ShapeBorder? a, double t) {
-    if (a is PolygonBorder && a.sides == sides) {
-      return PolygonBorder(
+    if (a is FlutterPolygonBorder && a.sides == sides) {
+      return FlutterPolygonBorder(
         sides: sides,
         rotate: lerpDouble(a.rotate, rotate, t)!,
         borderRadius: lerpDouble(a.borderRadius, borderRadius, t)!,
@@ -69,8 +69,8 @@ class PolygonBorder extends OutlinedBorder {
 
   @override
   ShapeBorder? lerpTo(ShapeBorder? b, double t) {
-    if (b is PolygonBorder && b.sides == sides) {
-      return PolygonBorder(
+    if (b is FlutterPolygonBorder && b.sides == sides) {
+      return FlutterPolygonBorder(
         sides: sides,
         rotate: lerpDouble(rotate, b.rotate, t)!,
         borderRadius: lerpDouble(borderRadius, b.borderRadius, t)!,
@@ -106,7 +106,7 @@ class PolygonBorder extends OutlinedBorder {
 
   @override
   ShapeBorder scale(double t) {
-    return PolygonBorder(
+    return FlutterPolygonBorder(
         sides: sides,
         rotate: rotate,
         borderRadius: borderRadius * t,
@@ -124,7 +124,7 @@ class PolygonBorder extends OutlinedBorder {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          other is PolygonBorder &&
+          other is FlutterPolygonBorder &&
               runtimeType == other.runtimeType &&
               sides == other.sides &&
               side == other.side &&
@@ -134,7 +134,7 @@ class PolygonBorder extends OutlinedBorder {
   @override
   OutlinedBorder copyWith({BorderSide? side}) {
     if (side == null) return this;
-    return PolygonBorder(
+    return FlutterPolygonBorder(
       sides: sides,
       side: side,
       rotate: rotate,
