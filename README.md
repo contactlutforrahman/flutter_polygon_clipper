@@ -2,9 +2,6 @@
 
 A Flutter package to create polygon shapes.
 
-Based on the [flutter_polygon_clipper](https://pub.dev/packages/flutter_polygon_clipper) package by [Lutfor Rahman](https://github.com/contactlutforrahman).
-
-
 ## Installation
 Add this to your project's pubspec.yaml file:
 
