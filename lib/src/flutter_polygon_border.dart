@@ -116,20 +116,20 @@ class FlutterPolygonBorder extends OutlinedBorder {
   @override
   int get hashCode {
     return sides.hashCode ^
-    rotate.hashCode ^
-    borderRadius.hashCode ^
-    side.hashCode;
+        rotate.hashCode ^
+        borderRadius.hashCode ^
+        side.hashCode;
   }
 
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          other is FlutterPolygonBorder &&
-              runtimeType == other.runtimeType &&
-              sides == other.sides &&
-              side == other.side &&
-              rotate == other.rotate &&
-              borderRadius == other.borderRadius;
+      other is FlutterPolygonBorder &&
+          runtimeType == other.runtimeType &&
+          sides == other.sides &&
+          side == other.side &&
+          rotate == other.rotate &&
+          borderRadius == other.borderRadius;
 
   @override
   OutlinedBorder copyWith({BorderSide? side}) {

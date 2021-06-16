@@ -41,7 +41,7 @@ ElevatedButton(
     sides: 6,
     borderRadius: 5.0,                                      // Defaults to 0.0 degrees
     rotate: 30.0,                                           // Defaults to 0.0 degrees
-    border: BorderSide(color: Colors.red, width: 2.0),      // Defaults to BorderSide.none
+    side: BorderSide(color: Colors.red, width: 2.0),      // Defaults to BorderSide.none
   ),
   onPressed: () {},
   child: Icon(Icons.star),

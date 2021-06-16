@@ -19,11 +19,11 @@ class FlutterClipPolygon extends StatelessWidget {
   /// The [sides] argument must be at least 3.
   FlutterClipPolygon(
       {Key? key,
-        required this.sides,
-        this.rotate: 0.0,
-        this.borderRadius: 0.0,
-        this.boxShadows: const [],
-        this.child})
+      required this.sides,
+      this.rotate: 0.0,
+      this.borderRadius: 0.0,
+      this.boxShadows: const [],
+      this.child})
       : assert(sides! >= 3),
         super(key: key);
 
