@@ -1,6 +1,6 @@
 name: flutter_polygon_clipper
 description: A Flutter package to create polygon shapes. From now on, you can create polygon shapes for you android and iOS app using Flutter & Flutter Polygon Cliper.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/contactlutforrahman/flutter_polygon_clipper
 
 environment:

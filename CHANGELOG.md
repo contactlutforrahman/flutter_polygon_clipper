@@ -9,3 +9,7 @@
 ## 1.0.2
 
 * Updated documentation
+
+## 1.0.3
+
+* Added example project and updated documentation

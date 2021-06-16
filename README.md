@@ -19,32 +19,40 @@ Use the `FlutterClipPolygon` widget to clip a child widget.
 import 'package:flutter_polygon_clipper/flutter_polygon_clipper.dart';
 
 FlutterClipPolygon(
- sides: 6,
- borderRadius: 5.0,     // Defaults to 0.0 degrees
- rotate: 90.0,          // Defaults to 0.0 degrees
- boxShadows: [
-  PolygonBoxShadow(color: Colors.black, elevation: 1.0),
-  PolygonBoxShadow(color: Colors.grey, elevation: 5.0)
- ],
- child: Container(color: Colors.black),
-);
+    sides: 6,
+    borderRadius: 5.0, // Defaults to 0.0 degrees
+    rotate: 90.0, // Defaults to 0.0 degrees
+    boxShadows: [
+      PolygonBoxShadow(color: Colors.red, elevation: 1.0),
+      PolygonBoxShadow(color: Colors.grey, elevation: 5.0)
+    ],
+    child: Container(color: Colors.green),
+),
 ```
 
 ### Borders
 
-Use the `FlutterClipPolygon` shape with your favorites widgets!
+Use the `FlutterPolygonBorder` shape with your favorites widgets!
 ``` dart
 import 'package:flutter_polygon_clipper/flutter_polygon_clipper.dart';
 
-ElevatedButton(
-  shape: FlutterClipPolygon(
-    sides: 6,
-    borderRadius: 5.0,                                      // Defaults to 0.0 degrees
-    rotate: 30.0,                                           // Defaults to 0.0 degrees
-    side: BorderSide(color: Colors.red, width: 2.0),      // Defaults to BorderSide.none
+Container(
+  height: 100,
+  width: 100,
+  child: ElevatedButton(
+    style: ElevatedButton.styleFrom(
+      shape: FlutterPolygonBorder(
+        sides: 3,
+        borderRadius: 5.0, // Defaults to 0.0 degrees
+        rotate: 30.0, // Defaults to 0.0 degrees
+        side: BorderSide(
+            color: Colors.red,
+            width: 2.0), // Defaults to BorderSide.none
+      ),
+    ),
+    onPressed: () {},
+    child: Icon(Icons.star),
   ),
-  onPressed: () {},
-  child: Icon(Icons.star),
 ),
 ```
 
