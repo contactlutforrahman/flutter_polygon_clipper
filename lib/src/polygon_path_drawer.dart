@@ -18,8 +18,8 @@ class PolygonPathDrawer {
     final anglePerSide = 360 / specs!.sides;
 
     final radius = (size!.width - specs!.borderRadiusAngle) / 2;
-    final arcLength =
-        (radius * _angleToRadian(specs!.borderRadiusAngle)) + (specs!.sides * 2);
+    final arcLength = (radius * _angleToRadian(specs!.borderRadiusAngle)) +
+        (specs!.sides * 2);
 
     Path path = Path();
 
@@ -89,6 +89,6 @@ class PolygonPathSpecs {
     required this.sides,
     required this.rotate,
     required this.borderRadiusAngle,
-  })   : halfBorderRadiusAngle = borderRadiusAngle / 2,
+  })  : halfBorderRadiusAngle = borderRadiusAngle / 2,
         assert(sides >= 3);
 }

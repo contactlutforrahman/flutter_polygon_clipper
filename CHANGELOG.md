@@ -13,3 +13,7 @@
 ## 1.0.3
 
 * Added example project and updated documentation
+
+## 1.0.4
+
+* Added example project and updated documentation

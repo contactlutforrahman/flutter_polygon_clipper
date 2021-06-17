@@ -1,4 +1,4 @@
-# flutter_polygon_clipper
+# Flutter Polygon Clipper
 
 A Flutter package to create polygon shapes. From now on, you can create polygon shapes for you android and iOS app using Flutter & Flutter Polygon Cliper.
 
@@ -10,16 +10,14 @@ dependencies:
   flutter_polygon_clipper: ^1.0.0
 ```
 
-## Usage
-
-### Clipping
+## Usage & Clipping
 
 Use the `FlutterClipPolygon` widget to clip a child widget.
 ``` dart
 import 'package:flutter_polygon_clipper/flutter_polygon_clipper.dart';
 
 FlutterClipPolygon(
-    sides: 6,
+    sides: 12,
     borderRadius: 5.0, // Defaults to 0.0 degrees
     rotate: 90.0, // Defaults to 0.0 degrees
     boxShadows: [
