@@ -16,4 +16,4 @@
 
 ## 1.0.4
 
-* Added example project and updated documentation
+* Updated documentation & example project
